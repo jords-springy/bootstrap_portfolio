@@ -1,0 +1,27 @@
+.section1 {
+    background-image: url("small-island-above-water-with-northern-lights-view-wallpaper-2560x1080_14.jpg");
+    ;
+    min-height: 850px;
+    margin-top: 150px;
+    fill-opacity: 50%;
+}
+
+*{
+    font-family:"Roboto";
+    font-size: large;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+.mx-5-col-md-1{ 
+    width: 200px; 
+    height: 200px; 
+    background-color: #4CAF50; 
+    transition: filter 0.3s ease; 
+} 
+
+.mx-5-col-md-1:hover{
+    filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+}
