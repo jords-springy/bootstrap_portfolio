@@ -1,8 +1,6 @@
-.section1 {
-    background-image: url("small-island-above-water-with-northern-lights-view-wallpaper-2560x1080_14.jpg");
-    ;
-    min-height: 850px;
-    margin-top: 150px;
+.section1-mt-0 {
+    background-image: url("https://jords-springy.github.io/hostedimages/images/small-island-above-water-with-northern-lights-view-wallpaper-2560x1080_14.jpg");
+    min-height: 50px;
     fill-opacity: 50%;
 }
 
@@ -11,12 +9,67 @@
     font-size: large;
 }
 
+
 h1{
     text-decoration: underline;
 }
 
+.nav-item{
+  text-align: center;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hover-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner img {
+  width: 100%; 
+  height: 300px;
+  object-fit: cover; 
+}
+.testimonial-image {
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-image:hover {
+  transform: translateY(10px);
+}
+
+.project-image {
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-image:hover {
+  transform: translateY(20px);
+  animation: slideTopToBottom 2s ease-in-out;
+}
+
+@keyframes slideTopToBottom {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 .formcarry-container {
   box-sizing: border-box;
