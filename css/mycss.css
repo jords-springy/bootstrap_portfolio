@@ -60,6 +60,41 @@ h1 {
     transform: scale(1.5);
 }
 
+/* Testimonials Section */
+.testimonials-container {
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.testimonial-card {
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #eceff9;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  color: #333333;
+}
+
+/* Ensure text doesn't overflow */
+.testimonial-card p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Media Queries for better responsiveness */
+@media screen and (max-width: 480px) {
+  .testimonials-container {
+      padding: 10px;
+  }
+
+  .testimonial-card {
+      font-size: 0.9rem;
+  }
+}
+
 /* Animation */
 @keyframes slideTopToBottom {
     0% { transform: translateY(-20px); }
