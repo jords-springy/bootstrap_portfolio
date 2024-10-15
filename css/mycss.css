@@ -26,7 +26,7 @@ h1 {
     min-height: 50px;
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    fill-opacity: 50%;
 }
 
 /* Hover Effects */
