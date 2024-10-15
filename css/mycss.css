@@ -60,40 +60,54 @@ h1 {
     transform: scale(1.5);
 }
 
-/* Testimonials Section */
+/* Container for the testimonials */
 .testimonials-container {
   padding: 20px;
-  overflow: hidden;
-  text-align: center;
+  overflow: auto; /* Ensures content can scroll if too long */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Individual testimonial cards */
 .testimonial-card {
-  padding: 15px;
-  margin: 10px;
+  padding: 20px;
+  margin: 15px;
+  width: 90%;
+  max-width: 600px; /* Prevents stretching too wide */
+  background-color: #ffffff;
   border: 1px solid #eceff9;
   border-radius: 8px;
-  background-color: #ffffff;
-  font-size: 1rem;
-  color: #333333;
-}
-
-/* Ensure text doesn't overflow */
-.testimonial-card p {
-  overflow-wrap: break-word;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   word-wrap: break-word;
+  overflow-wrap: break-word;
   hyphens: auto;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-/* Media Queries for better responsiveness */
-@media screen and (max-width: 480px) {
-  .testimonials-container {
-      padding: 10px;
-  }
+/* Handle long text without clipping */
+.testimonial-card p {
+  margin-bottom: 0;
+  white-space: normal; /* Allows line breaks */
+}
 
+/* Ensure cards adapt to their content */
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1; /* Allow the card to grow as needed */
+}
+
+/* Additional media query adjustments for mobile */
+@media screen and (max-width: 480px) {
   .testimonial-card {
       font-size: 0.9rem;
+      padding: 15px;
   }
 }
+
 
 /* Animation */
 @keyframes slideTopToBottom {
