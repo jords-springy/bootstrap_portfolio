@@ -70,7 +70,7 @@ h1 {
 }
 
 /* Individual testimonial cards */
-#testimonial-card {
+.testimonial-card {
   padding: 20px;
   margin: 15px;
   width: 90%;
@@ -87,7 +87,7 @@ h1 {
 }
 
 /* Handle long text without clipping */
-.section6 p {
+.col-md-3 p {
   margin-bottom: 0;
   white-space: normal; /* Allows line breaks */
 }
