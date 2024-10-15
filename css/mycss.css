@@ -87,7 +87,7 @@ h1 {
 }
 
 /* Handle long text without clipping */
-.testimonial-card p {
+.col-md-3 p {
   margin-bottom: 0;
   white-space: normal; /* Allows line breaks */
 }
